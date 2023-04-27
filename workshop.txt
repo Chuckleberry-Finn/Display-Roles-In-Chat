@@ -1,0 +1,27 @@
+version=1
+id=DisplayRolesInChat
+title=Display Roles In Chat
+description=[h1] Roles in Chat by Chuckleberry Finn [/h1]
+description=
+description=
+description=
+description=
+description=
+description=
+description=
+description=[quote=author]
+description=[b]Chuckleberry Finn[/b]
+description=Commissioned by
+description=[b]Dawn of the Dead
+               Project Zomboid Server[/b]
+description=[/quote]
+description=
+description=[h1]Hire Team Orbit for Custom Mod Commission[/h1]
+description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url]
+description=[h1]Click the banners[/h1]
+description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079 ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
+description=
+description=
+description=
+tags=Build 41;Building;Items;Misc;Multiplayer;Realistic;Texturesh;Military
+visibility=public
