@@ -1,0 +1,7 @@
+VERSION = 1,
+
+option DisplayRolesInChat.SpecialRoles
+{type = string, default =  , page = DisplayRolesInChat, translation = DisplayRolesInChat_SpecialRoles,}
+
+option DisplayRolesInChat.AssignRoles
+{type = string, default =  , page = DisplayRolesInChat, translation = DisplayRolesInChat_AssignRoles,}

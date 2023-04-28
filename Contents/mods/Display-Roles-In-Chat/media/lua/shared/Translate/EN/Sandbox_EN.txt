@@ -1,0 +1,9 @@
+Sandbox_EN = {
+	Sandbox_DisplayRolesInChat = "Display Roles In Chat",
+	Sandbox_DisplayRolesInChat_SpecialRoles = "Special Roles",
+	Sandbox_DisplayRolesInChat_SpecialRoles_tooltip = "FORMAT: ROLE1:R,G,B; ROLE2:R,G,B;\nWARNING: R,G,B values are 0 - 1. If you use a 255 standard, divide the values by 255.\nNote: You can overwrite vanilla role colors.",
+
+    Sandbox_DisplayRolesInChat_AssignRoles = "Assign Roles to Usernames",
+    Sandbox_DisplayRolesInChat_AssignRoles_tooltip = "FORMAT: USERNAME1:ROLE1; USERNAME1:ROLE1;\nNote: This is simply cosmetic, it does not assign the actual role.",
+
+	}

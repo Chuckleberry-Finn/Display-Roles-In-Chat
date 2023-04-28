@@ -21,4 +21,4 @@ description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercont
 description=[h1]Click the banners[/h1]
 description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079 ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
 tags=Build 41;Building;Items;Military;Misc;Multiplayer;Realistic
-visibility=friendsOnly
+visibility=unlisted
