@@ -71,24 +71,3 @@ function _metaMethodOverwrite.apply(class, methodName)
     metatable__index[methodName] = _metaMethodOverwrite[methodName](originalMethod)
 end
 _metaMethodOverwrite.apply(zombie.chat.ChatMessage.class, "getTextWithPrefix")
-
-
----ATTEMPT 2
---[[
-require "Chat/ISChat"
-local _addLineInChat = ISChat.addLineInChat
----@param message ChatMessage
-ISChat.addLineInChat = function(message, tabID)
-
-    _addLineInChat(message, tabID)
-
-    local chatText
-    for i,tab in ipairs(ISChat.instance.tabs) do if tab and tab.tabID == tabID then chatText = tab break end end
-    for i,chatMessage in pairs(chatText.chatMessages) do
-        if chatMessage == message then
-            local role = getRoleForMessage(chatMessage)
-            chatMessage:setAuthor(role..chatMessage:getAuthor())
-        end
-    end
-end
---]]
