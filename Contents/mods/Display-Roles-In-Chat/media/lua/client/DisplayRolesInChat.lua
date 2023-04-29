@@ -14,20 +14,10 @@ local function processSandBoxOptions()
         accessLevelColors[role] = color
     end
 
-    print("ROLES:")
-    for k,v in pairs(accessLevelColors) do
-        print(k, v)
-    end
-
     local AssignRoles = SandboxVars.DisplayRolesInChat.AssignRoles
     for usernameRole in string.gmatch(AssignRoles, "([^;]+)") do
         local username,role = string.match(usernameRole, "(.*):(.*)")
         assignedSpecialRoles[username] = role
-    end
-
-    print("ASSIGNED:")
-    for k,v in pairs(assignedSpecialRoles) do
-        print(k, v)
     end
 end
 Events.OnLoad.Add(processSandBoxOptions)
@@ -42,25 +32,75 @@ function ISServerSandboxOptionsUI:destroy()
 end
 
 
---LuaEventManager.triggerEvent("OnAddMessage", var1, this.getTabID())
----@param chatMessage ChatMessage
-local function applyRoleToChatMessage(chatMessage, chatID)
-    local author = chatMessage:getAuthor()
-    if chatMessage and author then
+---@param message ChatMessage
+local function getRoleForMessage(message)
+    local author = message:getAuthor()
+    if author then
         local player = getPlayerFromUsername(author)
         if player then
 
             local accessLevel = assignedSpecialRoles[player:getUsername()] or string.lower(player:getAccessLevel())
             if accessLevelColors[accessLevel] then
                 ---@type Color
-                local chatBaseColor = chatMessage:getTextColor()
+                local chatBaseColor = message:getTextColor()
                 local oldRGB = "1,1,1"
                 if chatBaseColor then
                     oldRGB = chatBaseColor:getR()..","..chatBaseColor:getG()..","..chatBaseColor:getB()
                 end
-                chatMessage:setAuthor(" <RGB:"..accessLevelColors[accessLevel].."> � "..string.upper(accessLevel).." �� <RGB:"..oldRGB.."> "..author)
+                return (" <RGB:"..accessLevelColors[accessLevel].."> � "..string.upper(accessLevel).." �� <RGB:"..oldRGB.."> ")
             end
         end
     end
 end
+
+
+local _metaMethodOverwrite = {}
+
+_metaMethodOverwrite.getTextWithPrefix = function(original_fn)
+    return function(self, ...)
+        local originalReturn = original_fn(self, ...)
+        local role = getRoleForMessage(self) or ""
+        return role..originalReturn
+    end
+end
+
+function _metaMethodOverwrite.apply(class, methodName)
+    local metatable = __classmetatables[class]
+    local metatable__index = metatable.__index
+    local originalMethod = metatable__index[methodName]
+    metatable__index[methodName] = _metaMethodOverwrite[methodName](originalMethod)
+end
+_metaMethodOverwrite.apply(zombie.chat.ChatMessage.class, "getTextWithPrefix")
+
+
+---ATTEMPT 2
+--[[
+require "Chat/ISChat"
+local _addLineInChat = ISChat.addLineInChat
+---@param message ChatMessage
+ISChat.addLineInChat = function(message, tabID)
+
+    _addLineInChat(message, tabID)
+
+    local chatText
+    for i,tab in ipairs(ISChat.instance.tabs) do if tab and tab.tabID == tabID then chatText = tab break end end
+    for i,chatMessage in pairs(chatText.chatMessages) do
+        if chatMessage == message then
+            local role = getRoleForMessage(chatMessage)
+            chatMessage:setAuthor(role..chatMessage:getAuthor())
+        end
+    end
+end
+--]]
+
+
+---ATTEMPT 1
+--[[
+--LuaEventManager.triggerEvent("OnAddMessage", var1, this.getTabID())
+---@param chatMessage ChatMessage
+local function applyRoleToChatMessage(chatMessage, chatID)
+    local role = getRoleForMessage(chatMessage)
+    chatMessage:setAuthor(role..chatMessage:getAuthor())
+end
 Events.OnAddMessage.Add(applyRoleToChatMessage)
+--]]
