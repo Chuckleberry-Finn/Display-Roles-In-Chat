@@ -92,15 +92,3 @@ ISChat.addLineInChat = function(message, tabID)
     end
 end
 --]]
-
-
----ATTEMPT 1
---[[
---LuaEventManager.triggerEvent("OnAddMessage", var1, this.getTabID())
----@param chatMessage ChatMessage
-local function applyRoleToChatMessage(chatMessage, chatID)
-    local role = getRoleForMessage(chatMessage)
-    chatMessage:setAuthor(role..chatMessage:getAuthor())
-end
-Events.OnAddMessage.Add(applyRoleToChatMessage)
---]]
