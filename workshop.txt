@@ -2,8 +2,10 @@ version=1
 id=2968026253
 title=Display Roles In Chat
 description=[h1] Roles in Chat by Chuckleberry Finn [/h1]
+description=Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc)
+description=Supports custom roles (handled in sandbox options - cosmetic only.)
 description=
-description=
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck![/b][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/Vanilla-Weapons-Expanded/main/Contents/mods/VanillaWeaponsExpanded/patreon/Patreon%20Logo.png[/img][/url]
 description=
 description=
 description=
