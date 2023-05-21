@@ -1,8 +1,8 @@
 version=1
 id=2968026253
 title=Display Roles In Chat
-description=[h1]Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc)
-description=Supports custom roles (handled in sandbox options - cosmetic only.)[/h1]
+description=[h1]Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc)[/h1]
+description=[h2]Supports custom roles (handled in sandbox options - cosmetic only.)[/h2]
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck![/b][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/Vanilla-Weapons-Expanded/main/Contents/mods/VanillaWeaponsExpanded/patreon/Patreon%20Logo.png[/img][/url]
 description=
@@ -17,4 +17,4 @@ description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercont
 description=[h1]Click the banners[/h1]
 description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079 ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
 tags=Build 41;Misc;Multiplayer
-visibility=unlisted
+visibility=public
