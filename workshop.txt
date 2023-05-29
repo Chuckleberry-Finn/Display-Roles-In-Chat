@@ -1,20 +1,19 @@
 version=1
 id=2968026253
 title=Display Roles In Chat
-description=[h1]Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc)[/h1]
-description=[h2]Supports custom roles (handled in sandbox options - cosmetic only.)[/h2]
+description=[h2]Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc)
+description=Supports custom roles (handled in sandbox options - cosmetic only.)[/h2]
+description=[h3]Commissioned by [b]Dawn of the Dead Project Zomboid Server[/b][/h3]
+description=
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://i.imgur.com/GxZ38nz.png[/img] [b]Consider supporting Chuck![/b][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/Vanilla-Weapons-Expanded/main/Contents/mods/VanillaWeaponsExpanded/patreon/Patreon%20Logo.png[/img][/url]
 description=
 description=
-description=Commissioned by
-description=[b]Dawn of the Dead
-description=Project Zomboid Server[/b]
 description=
-description=
-description=[h1]Hire Team Orbit for Custom Mod Commission[/h1]
 description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url]
-description=[h1]Click the banners[/h1]
-description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079 ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
+description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
+description=
+description=
+description=
 tags=Build 41;Misc;Multiplayer
 visibility=public
