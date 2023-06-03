@@ -14,10 +14,14 @@ local function processSandBoxOptions()
         accessLevelColors[role] = color
     end
 
+
     local AssignRoles = SandboxVars.DisplayRolesInChat.AssignRoles
     for usernameRole in string.gmatch(AssignRoles, "([^;]+)") do
-        local username,role = string.match(usernameRole, "(.*):(.*)")
-        assignedSpecialRoles[username] = role
+        local usernames,role = string.match(usernameRole, "(.*):(.*)")
+
+        for username in string.gmatch(usernames, "([^,]+)") do
+            assignedSpecialRoles[username] = role
+        end
     end
 end
 Events.OnLoad.Add(processSandBoxOptions)
