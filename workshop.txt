@@ -10,10 +10,7 @@ description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubuserc
 description=
 description=
 description=
-description=[url= https://discord.gg/2skchrKrDv ][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url]
-description=[url= https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
-description=
-description=
-description=
+description=[url=https://discord.gg/2skchrKrDv][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
 tags=Build 41;Misc;Multiplayer
 visibility=public
