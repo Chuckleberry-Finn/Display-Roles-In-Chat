@@ -7,10 +7,5 @@ description=[h3]Commissioned by [b]Dawn of the Dead Project Zomboid Server[/b][/
 description=
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url] [url=https://www.patreon.com/bePatron?u=17239488][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/patreon.png[/img][/url]
-description=
-description=
-description=
-description=[url=https://discord.gg/2skchrKrDv][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/square_serve.gif[/img][/url]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2963097079][img]https://raw.githubusercontent.com/Glytch3r/TeamOrbitAds/main/workshop.png[/img][/url]
 tags=Build 41;Misc;Multiplayer
 visibility=public
