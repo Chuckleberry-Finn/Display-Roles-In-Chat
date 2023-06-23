@@ -1,10 +1,8 @@
 id=DisplayRolesInChat
 name=Display Roles In Chat
-description=This Mod is Commissioned to TeamOrbit. You are not allowed to put this on your modpack
+description=Vanilla roles are displayed in chat. (Admin, GM, Moderator, etc). Supports custom roles (handled in sandbox options - cosmetic only.)
 poster=poster.png
-authors=TeamOrbit
-icon=icon.png
-tags=Build 41,Balance,Building,Clothing/Armor,Food,Misc,Models,Multiplayer,Pop Culture,Realistic,Silly/Fun,Textures
+tags=Build 41,Multiplayer
 versionMin=41.0
 
 
