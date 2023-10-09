@@ -54,12 +54,15 @@ function displayRole.getRoleForMessage(message)
     if author then
 
         local username, accessLevel
-
         local onlineUsers = getOnlinePlayers()
         for i=0, onlineUsers:size()-1 do
             local player = onlineUsers:get(i)
-            username = player:getUsername()
-            accessLevel = player:getAccessLevel()
+            local pUsername = player:getUsername()
+            if pUsername == author then
+                username = player:getUsername()
+                accessLevel = player:getAccessLevel()
+                break
+            end
         end
 
         if username or accessLevel then
